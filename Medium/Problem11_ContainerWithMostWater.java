@@ -2,7 +2,7 @@ package Medium;
 
 // Time Complexity: O(n)
 // Space Complexity: O(1)
-class Problem11_ContainerWithMostWater {
+class Solution {
     public int maxArea(int[] height) {
         // res to store output
         int res = 0;

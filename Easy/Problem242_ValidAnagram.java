@@ -2,7 +2,7 @@ package Easy;
 
 // Time Complexity : O(n)
 // Space Complexity : O(1) only array of size 26 is used
-class Problem242_ValidAnagram {
+class Solution {
     public boolean isAnagram(String s, String t) {
         // if length of string s is not equal to length of string t
         // return false

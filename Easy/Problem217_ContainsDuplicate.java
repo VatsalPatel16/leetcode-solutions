@@ -5,7 +5,7 @@ import java.util.Set;
 
 // Time Complexity: O(n)
 // Space Complexity: O(n)
-class Problem217_ContainsDuplicate {
+class Solution {
     public boolean containsDuplicate(int[] nums) {
         // Set to store elements from array and check for duplicate
         Set<Integer> val = new HashSet<>();

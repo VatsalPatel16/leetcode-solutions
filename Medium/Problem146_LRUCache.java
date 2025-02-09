@@ -20,7 +20,7 @@ class ListNode {
 
 // Time Complexity: O(1) per operation (get(), put())
 // Space Complexity: O(n) due to use of linked list and HashMap
-class Problem146_LRUCache {
+class LRUCache {
     // variable capacity to store capacity of LRU cache
     private int capacity;
     // Map to store key and node
@@ -30,7 +30,7 @@ class Problem146_LRUCache {
     private ListNode tail;
 
     // Initialization of all the variables
-    public Problem146_LRUCache(int capacity) {
+    public LRUCache(int capacity) {
         this.capacity = capacity;
         this.cacheMap = new HashMap<>();
         // Initializing head and tail with (-1, -1)

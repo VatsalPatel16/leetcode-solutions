@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 // Time Complexity: O(n)
 // Space Complexity: O(n)
-class Problem1_TwoSum {
+class Solution {
     public int[] twoSum(int[] nums, int target) {
         // HashMap to store numbers and their indices
         HashMap<Integer, Integer> num = new HashMap<>();

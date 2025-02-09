@@ -84,7 +84,7 @@ For example:
 - `Problem121_BestTimeToBuyAndSellStock.java`
 - `Problem217_ContainsDuplicate.java`
 
-This format ensures clarity by keeping the problem ID and name recognizable while adhering to Java's class naming rules.
+This format ensures clarity by keeping the problem ID and name recognizable.
 
 ---
 

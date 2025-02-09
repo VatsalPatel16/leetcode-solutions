@@ -2,7 +2,7 @@ package Easy;
 
 // Time Complexity: O(n)
 // Space Complexity: O(n) due to creation of new string
-class Problem125_ValidPalindrome {
+class Solution {
     public boolean isPalindrome(String s) {
         // regex to remove all non-alphanumeric characters from the string s
         String regex = "[^a-zA-Z0-9]";
