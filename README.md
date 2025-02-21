@@ -33,14 +33,14 @@ The repository is organized as follows:
 ```
 leetcode-solutions/
 ├── Easy/
-│   ├── Problem1_TwoSum.java
-│   ├── Problem217_ContainsDuplicate.java
+│   ├── Problem0001_TwoSum.java
+│   ├── Problem0217_ContainsDuplicate.java
 │   └── ...
 ├── Medium/
-│   ├── Problem3_LongestSubstringWithoutRepeatingCharacters.java
+│   ├── Problem0003_LongestSubstringWithoutRepeatingCharacters.java
 │   └── ...
 ├── Hard/
-│   ├── Problem4_MedianOfTwoSortedArrays.java
+│   ├── Problem0004_MedianOfTwoSortedArrays.java
 │   └── ...
 └── README.md
 ```
@@ -80,9 +80,9 @@ To maintain consistency and readability, the Java files are named using the foll
 
 For example:
 
-- `Problem1_TwoSum.java`
-- `Problem121_BestTimeToBuyAndSellStock.java`
-- `Problem217_ContainsDuplicate.java`
+- `Problem0001_TwoSum.java`
+- `Problem0121_BestTimeToBuyAndSellStock.java`
+- `Problem0217_ContainsDuplicate.java`
 
 This format ensures clarity by keeping the problem ID and name recognizable.
 
