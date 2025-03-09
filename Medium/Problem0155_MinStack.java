@@ -3,47 +3,47 @@ package Medium;
 import java.util.Stack;
 
 // Time Complexity: O(1) for all operations (push, pop, top, getMin)
-// Space Complexity: O(n) because used two stacks (stack & minVal)
+// Space Complexity: O(n) because used stack to store {value, minValue}
 class MinStack {
-    // Using two stacks
-    // 1) normal stack
-    // 2) minVal which will keep track of minimum value in the stack
-    Stack<Integer> stack = new Stack<>();
-    Stack<Integer> minVal = new Stack<>();
+    // stack with int array which will hold {value, minValue}
+    Stack<int[]> stack = new Stack<>();
 
     // push operation
     public void push(int val) {
-        // push given val into stack
-        stack.push(val);
+        // Getting the minimum value for current position
+        // if stack is empty then current element will be minimum
+        // otherwise get the minimum from val and stack.peek()[1]
+        int min = stack.isEmpty() ? val : Math.min(val, stack.peek()[1]);
 
-        // for minVal check if it is empty
-        // if yes then push given val in the minVal stack
-        if (minVal.isEmpty()) {
-            minVal.push(val);
-        }
-        // if not empty then push minimum value between val and minVal.peek() (top
-        // element of minVal stack)
-        else {
-            minVal.push(Math.min(val, minVal.peek()));
-        }
+        // push both val and min in the stack
+        stack.push(new int[] { val, min });
     }
 
     // pop operation
     public void pop() {
-        // popping top element from both stacks
+        // pop top element out from the stack
         stack.pop();
-        minVal.pop();
     }
 
     // top function (get top element from stack without removing that)
     public int top() {
-        // using peek operation to get the top of stack
-        return stack.peek();
+        // getting the top element from the stack without removing it
+        // and it is stored at 0th index of top element
+        return stack.peek()[0];
     }
 
     // getMin function (get minimum value from the stack in O(1) time)
     public int getMin() {
-        // using peek operation on minVal stack which keep track minimum value in stack
-        return minVal.peek();
+        // Getting the minimum value in O(1) stored at 1st index of top element
+        return stack.peek()[1];
     }
 }
+
+/**
+ * Your MinStack object will be instantiated and called as such:
+ * MinStack obj = new MinStack();
+ * obj.push(val);
+ * obj.pop();
+ * int param_3 = obj.top();
+ * int param_4 = obj.getMin();
+ */
